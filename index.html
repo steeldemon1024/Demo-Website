@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="SMASH & BUN is a modern Tirana burger restaurant for freshly smashed beef, crispy chicken and loaded fries."
+    />
+    <meta name="theme-color" content="#f5f0e7" />
+    <meta property="og:title" content="SMASH & BUN | Burgers worth coming back for." />
+    <meta
+      property="og:description"
+      content="Freshly smashed beef, crispy edges, melted cheese and house-made sauces."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=1600&amp;q=90"
+    />
+    <meta property="og:type" content="website" />
+    <title>SMASH & BUN | Burgers worth coming back for.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="SMASH & BUN home">
+          <span>SMASH</span><span class="brand-mark">&amp;</span><span>BUN</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#top">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#location">Location</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="header-order" type="button" data-open-order>
+            <span>Order Now</span>
+            <b data-cart-count>0</b>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-menu-toggle
+          >
+            <span class="sr-only">Open navigation</span>
+            <i></i><i></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+        <a href="#top">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#location">Location</a>
+        <button type="button" data-open-order>Order Now</button>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-frame">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=2200&amp;q=92"
+            alt="A double cheeseburger with melted cheese, pickles and a soft bun"
+            width="2200"
+            height="1500"
+            fetchpriority="high"
+          />
+          <div class="hero-image-wash" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p class="hero-kicker">SMASH &amp; BUN · TIRANA</p>
+            <h1 id="hero-title">Burgers worth<span class="desktop-line-break"><br /></span><span class="mobile-line-space"> </span>coming back for.</h1>
+            <p class="hero-text">
+              Freshly smashed beef, crispy edges, melted cheese and house-made sauces.
+            </p>
+            <div class="hero-actions">
+              <button class="button-order" type="button" data-open-order>
+                <span>Order Now</span><b>+</b>
+              </button>
+              <a class="button-menu" href="#menu">View Menu <span>↓</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular section-wrap" aria-labelledby="popular-title">
+        <div class="section-intro">
+          <p class="eyebrow">Popular Picks</p>
+          <h2 id="popular-title">The ones people<br />come back for.</h2>
+        </div>
+
+        <div class="popular-grid">
+          <article class="food-card food-card-featured">
+            <div class="food-image">
+              <img
+                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=1400&amp;q=88"
+                alt="Classic double smash burger with American cheese"
+                loading="lazy"
+                width="1400"
+                height="1200"
+              />
+            </div>
+            <div class="food-copy">
+              <div class="food-title-row">
+                <h3>Classic Smash</h3>
+                <p>€8.90</p>
+              </div>
+              <p>Double smashed beef, American cheese, pickles and house sauce.</p>
+              <button
+                class="add-button"
+                type="button"
+                data-add-item="Classic Smash"
+                data-add-price="8.90"
+              >
+                <span>Add to Order</span><b>+</b>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&amp;fit=crop&amp;w=1100&amp;q=88"
+                alt="Bacon cheeseburger with a toasted sesame bun"
+                loading="lazy"
+                width="1100"
+                height="900"
+              />
+            </div>
+            <div class="food-copy">
+              <div class="food-title-row">
+                <h3>Bacon Stack</h3>
+                <p>€10.50</p>
+              </div>
+              <p>Double beef, crispy bacon, cheddar, caramelized onions and smoky sauce.</p>
+              <button
+                class="add-button"
+                type="button"
+                data-add-item="Bacon Stack"
+                data-add-price="10.50"
+              >
+                <span>Add to Order</span><b>+</b>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <div class="food-image">
+              <img
+                src="https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&amp;fit=crop&amp;w=1100&amp;q=88"
+                alt="Crispy chicken sandwich with lettuce and tomato"
+                loading="lazy"
+                width="1100"
+                height="900"
+              />
+            </div>
+            <div class="food-copy">
+              <div class="food-title-row">
+                <h3>Crispy Chicken</h3>
+                <p>€8.50</p>
+              </div>
+              <p>Crispy chicken, lettuce, tomato and garlic mayo.</p>
+              <button
+                class="add-button"
+                type="button"
+                data-add-item="Crispy Chicken"
+                data-add-price="8.50"
+              >
+                <span>Add to Order</span><b>+</b>
+              </button>
+            </div>
+          </article>
+
+          <article class="food-card food-card-wide">
+            <div class="food-image">
+              <img
+                src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&amp;fit=crop&amp;w=1400&amp;q=88"
+                alt="Golden loaded fries with cheddar sauce and bacon"
+                loading="lazy"
+                width="1400"
+                height="900"
+              />
+            </div>
+            <div class="food-copy">
+              <div class="food-title-row">
+                <h3>Loaded Fries</h3>
+                <p>€5.00</p>
+              </div>
+              <p>Crispy fries, cheddar sauce, bacon bits and house seasoning.</p>
+              <button
+                class="add-button"
+                type="button"
+                data-add-item="Loaded Fries"
+                data-add-price="5.00"
+              >
+                <span>Add to Order</span><b>+</b>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="fresh section-wrap" id="about" aria-labelledby="fresh-title">
+        <div class="fresh-image">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=1400&amp;q=88"
+            alt="Warm modern restaurant interior with a lively dining room"
+            loading="lazy"
+            width="1400"
+            height="1100"
+          />
+          <p>Fresh off the grill, straight to the tray.</p>
+        </div>
+        <div class="fresh-copy">
+          <span class="red-rule" aria-hidden="true"></span>
+          <h2 id="fresh-title">Made fresh.<br />Served hot.</h2>
+          <p>
+            SMASH &amp; BUN keeps the menu focused: fresh beef smashed to order,
+            quality ingredients, crisp fries and sauces made in-house.
+          </p>
+          <p>
+            No overthinking. Just a properly good burger, served the way you want it.
+          </p>
+          <a class="inline-arrow-link" href="#location">Find the counter <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="menu-section section-wrap" id="menu" aria-labelledby="menu-title">
+        <div class="menu-heading">
+          <p class="menu-mark">SMASH &amp; BUN</p>
+          <h2 id="menu-title">The menu.</h2>
+          <p>Big flavor. Short list. Everything made for the tray.</p>
+        </div>
+
+        <div class="menu-board" aria-label="SMASH & BUN menu">
+          <section class="menu-list menu-list-burgers" aria-labelledby="burgers-title">
+            <header class="menu-list-header">
+              <h3 id="burgers-title">Burgers</h3>
+              <span>Freshly smashed</span>
+            </header>
+            <ul>
+              <li><span>Classic Smash</span><b>€8.90</b></li>
+              <li><span>Bacon Stack</span><b>€10.50</b></li>
+              <li><span>Double Cheese</span><b>€9.90</b></li>
+              <li><span>Hot Honey</span><b>€10.00</b></li>
+              <li><span>Crispy Chicken</span><b>€8.50</b></li>
+            </ul>
+          </section>
+
+          <div class="menu-side-lists">
+            <section class="menu-list" aria-labelledby="sides-title">
+              <header class="menu-list-header">
+                <h3 id="sides-title">Sides</h3>
+                <span>For the table</span>
+              </header>
+              <ul>
+                <li><span>Skin-On Fries</span><b>€3.00</b></li>
+                <li><span>Loaded Fries</span><b>€5.00</b></li>
+                <li><span>Chicken Tenders</span><b>€5.50</b></li>
+                <li><span>Onion Rings</span><b>€4.00</b></li>
+              </ul>
+            </section>
+            <section class="menu-list menu-list-drinks" aria-labelledby="drinks-title">
+              <header class="menu-list-header">
+                <h3 id="drinks-title">Drinks</h3>
+                <span>Cold stuff</span>
+              </header>
+              <ul>
+                <li><span>Cola</span><b>€2.00</b></li>
+                <li><span>Lemonade</span><b>€3.00</b></li>
+                <li><span>Milkshake</span><b>€4.50</b></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section" id="location" aria-labelledby="location-title">
+        <div class="location-inner">
+          <div class="location-copy">
+            <p class="location-kicker">Hungry yet?</p>
+            <h2 id="location-title">Come grab<br />a burger.</h2>
+            <address>123 Main Street, Tirana<br />Every day · 11:00-23:00</address>
+            <div class="location-actions">
+              <a
+                class="directions-button"
+                href="https://www.google.com/maps/search/?api=1&amp;query=123+Main+Street%2C+Tirana"
+                target="_blank"
+                rel="noreferrer"
+              >Get Directions <span>↗</span></a>
+              <button class="location-order" type="button" data-open-order>
+                Order Now <span>→</span>
+              </button>
+            </div>
+          </div>
+          <div class="location-image">
+            <img
+              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&amp;fit=crop&amp;w=1600&amp;q=88"
+              alt="Restaurant counter ready for an evening meal"
+              loading="lazy"
+              width="1600"
+              height="1000"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="footer-wordmark" href="#top">SMASH &amp; BUN</a>
+        <p>Burgers worth coming back for.</p>
+        <button class="footer-order" type="button" data-open-order>
+          Start an order <span>→</span>
+        </button>
+      </div>
+      <div class="footer-columns">
+        <section>
+          <h2>Social</h2>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer">TikTok</a>
+        </section>
+        <section>
+          <h2>Visit</h2>
+          <a href="#location">123 Main Street, Tirana</a>
+          <a href="#location">Every day, 11:00-23:00</a>
+        </section>
+        <section>
+          <h2>Contact</h2>
+          <a href="mailto:hello@smashandbun.example">hello@smashandbun.example</a>
+          <a href="#menu">View Menu</a>
+        </section>
+      </div>
+      <p class="footer-bottom">© 2026 SMASH &amp; BUN. Fresh off the grill.</p>
+    </footer>
+
+    <div class="order-layer" data-order-layer hidden>
+      <div class="order-scrim" data-close-order></div>
+      <aside
+        class="order-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="order-title"
+        aria-describedby="order-description"
+      >
+        <div class="drawer-header">
+          <div>
+            <p>Your tray</p>
+            <h2 id="order-title">Order</h2>
+          </div>
+          <button class="drawer-close" type="button" data-close-order aria-label="Close order">×</button>
+        </div>
+        <p id="order-description" class="sr-only">Review items in your order tray.</p>
+        <div class="drawer-items" data-drawer-items></div>
+        <div class="drawer-empty" data-drawer-empty>
+          <p>Your tray is empty.</p>
+          <span>Pick a favorite and we will keep the total ready here.</span>
+        </div>
+        <div class="drawer-footer">
+          <div class="drawer-total"><span>Total</span><b data-cart-total>€0.00</b></div>
+          <a href="#location" data-close-order>Pickup at 123 Main Street <span>↘</span></a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="toast" data-toast role="status" aria-live="polite">Added to your tray.</div>
+  </body>
+</html>
